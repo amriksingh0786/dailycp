@@ -16,18 +16,13 @@ int main()
     while(t--){
         int m,n;
         cin>>m>>n;
-        if (m == 1) { 
-        cout << m << " "; 
-        m++; 
-        if (n >= 2) { 
-            cout << m << " "; 
-            m++; 
-        } 
-    } 
-    if (m== 2) 
-        cout << m<< " "; 
+   
+    if (m+1 == 2) 
+        cout << 2<< endl; 
   
-  
+    if(m==1){
+        m++;
+    }
     if (m % 2 == 0) 
         m++; 
   
@@ -41,15 +36,18 @@ int main()
         for (j = 2; j * j <= i; ++j) { 
             if (i % j == 0) { 
                 flag = 0; 
-                break; 
+               
             } 
         } 
   
     
         if (flag == 1) 
-            cout << i << " "; 
+            cout << i << endl; 
+
+       
+        
     } 
-  
+        cout<<endl;
     }
     return 0;
 }
