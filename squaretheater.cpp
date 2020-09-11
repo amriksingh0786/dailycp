@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+/* #include <bits/stdc++.h>
 
 #define fastio                        \
     ios_base::sync_with_stdio(false); \
@@ -25,8 +25,14 @@ int main()
         ++aM;
     }
 
-    if(a==1 && n==1 && m==1){
-        cout<<a;
+    if(a==n && a==m){
+        cout<<aN;
+    }
+    else if(a==n){
+           cout<<aM;
+    }
+    else if(a==m){
+    cout<<aN;
     }
     else{
         cout<<aN+aM;
@@ -34,4 +40,13 @@ int main()
     
 
     return 0;
-}
+} */
+
+
+#include <bits/stdc++.h> 
+using namespace std; 
+int main(){ 
+    double n, m, a; 
+    cin >> n >> m >> a; 
+    cout << (long long) ceil(n/a)* (long long) ceil(m/a) << endl; 
+} 
